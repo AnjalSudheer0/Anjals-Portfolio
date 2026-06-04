@@ -68,3 +68,4 @@ function handleHUDScroll() {
 
 window.addEventListener('scroll', handleHUDScroll);
 handleHUDScroll(); // Initial check
+

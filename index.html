@@ -50,8 +50,8 @@
             <p class="subtitle typing-text">Unity 2D & 3D Game Developer | C#</p>
             <div class="hero-actions">
                 <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-gamepad"></i> View Work</a>
-                <a href="#" class="btn btn-outline"><i class="fa-solid fa-download"></i> Download Resume</a>
-                <a href="tel:+919746615634" class="btn btn-outline"><i class="fa-solid fa-phone"></i> +91 9747971360</a>
+                <a href="Anjal_Resume.pdf" download="Anjal_Resume.pdf" onclick="window.open('Anjal_Resume.pdf', '_blank')" class="btn btn-outline"><i class="fa-solid fa-download"></i> Download Resume</a>
+                <a href="tel:+919746615634" class="btn btn-outline"><i class="fa-solid fa-phone"></i> +91 9746615634</a>
             </div>
         </div>
         <div class="scroll-hint">
@@ -200,7 +200,7 @@
                     <h3>Bingo Game</h3>
                     <div class="tags">
                         <span class="tag">2D</span>
-                        <span class="tag">Single Player</span>
+                        <span class="tag">Player vs AI</span>
                         <span class="tag">Logic</span>
                     </div>
                 </div>
@@ -242,7 +242,7 @@
             <h2>Let's <span class="highlight">Connect</span></h2>
             <p class="comms-subtitle">Initiate direct transmission or select a modular connection node below.</p>
 
-            <form action="#" method="POST" class="contact-form">
+            <form id="contact-form" action="#" method="POST" class="contact-form">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="IDENT_NAME" required class="form-control">
                 </div>
@@ -254,7 +254,7 @@
                         class="form-control"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary btn-submit">
-                    <i class="fa-solid fa-paper-plane"></i> SEND SIGNAL
+                    <i class="fa-solid fa-paper-plane"></i> <span id="submit-btn-text">SEND SIGNAL</span>
                 </button>
             </form>
 
@@ -286,6 +286,8 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="email.js"></script>
     <script src="script.js"></script>
 </body>
 
